@@ -1,7 +1,12 @@
 {
-    "folders": [
+	"folders": [
 		{
 			"path": "."
 		}
-	]
+	],
+	"settings": {
+		"cSpell.words": [
+			"reduxjs"
+		]
+	}
 }
