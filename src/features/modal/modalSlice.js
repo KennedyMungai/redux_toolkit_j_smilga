@@ -16,3 +16,5 @@ export const modalSlice = createSlice({
 		}
 	}
 })
+
+export const { openModal, closeModal } = modalSlice.actions
