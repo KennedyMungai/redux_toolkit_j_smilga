@@ -39,7 +39,7 @@ const CartContainer = () => {
 				</div>
 				<button
 					className='btn clear-btn'
-					onClick={() => dispatch(clearCart)}
+					onClick={() => dispatch(clearCart())}
 				>
 					Clear Cart
 				</button>
