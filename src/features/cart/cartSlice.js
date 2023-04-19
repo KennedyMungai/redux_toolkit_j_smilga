@@ -18,8 +18,15 @@ const cartSlice = createSlice({
 		removeItem: (state, action) => {
 			const itemId = action.payload
 			state.cartItems = state.cartItems.filter(
-				(item) => item.id != itemId
+				(item) => item.id !== itemId
 			)
+		},
+		increase: (state, action) => {
+			const cartItem = state.cartItems.find(
+				(item) => item.id === action.payload.id
+			)
+
+			cartItem.amount += 1
 		}
 	}
 })
