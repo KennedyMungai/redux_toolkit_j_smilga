@@ -26,14 +26,14 @@ const cartSlice = createSlice({
 				(item) => item.id === action.payload.id
 			)
 
-			cartItem.amount += 1
+			state.amount = state.amount + 1
 		},
 		decreaseItem: (state, action) => {
 			const cartItem = state.cartItems.find(
 				(item) => item.id === action.payload.id
 			)
 
-			state.amount -= 1
+			state.amount = state.amount -= 1
 		},
 		calculateTotals: (state) => {
 			let amount = 0
