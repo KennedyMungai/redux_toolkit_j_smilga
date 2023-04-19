@@ -29,9 +29,11 @@ const CartContainer = () => {
 			</div>
 			<footer>
 				<hr />
-				<h4>
-					total <span>${total}</span>
-				</h4>
+				<div className='cart-total'>
+					<h4>
+						total <span>${total}</span>
+					</h4>
+				</div>
 			</footer>
 		</section>
 	)
