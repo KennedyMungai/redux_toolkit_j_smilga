@@ -10,6 +10,15 @@ const CartItem = ({ id, img, title, price, amount }) => {
 				<h4 className='item-price'>${price}</h4>
 				<button className='remove-btn'>Remove</button>
 			</div>
+			<div>
+				<button className='amount-btn'>
+					<BsChevronUp />
+				</button>
+				<p className='amount'>{amount}</p>
+				<button className='amount-btn'>
+					<BsChevronDown />
+				</button>
+			</div>
 		</article>
 	)
 }
