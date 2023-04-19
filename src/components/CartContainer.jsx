@@ -5,7 +5,16 @@ import { useSelector } from 'react-redux'
 const CartContainer = () => {
 	const { cartItem, total, amount } = useSelector((state) => state.cart)
 
-	return <div>cartContainer</div>
+	if (amount < 1) {
+		return (
+			<section className='cart'>
+				<header>
+					<h2>Your Bag</h2>
+					<h4>is empty</h4>
+				</header>
+			</section>
+		)
+	}
 }
 
 export default CartContainer
