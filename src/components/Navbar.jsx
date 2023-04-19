@@ -9,8 +9,6 @@ const Navbar = () => {
 		<nav>
 			<h3>redux toolkit</h3>
 			<div className='nav-container'>
-				{/* <CartIcon /> */}
-				<img src={SlBasket} />
 				<div className='amount-container'>
 					<p className='total-amount'>{amount}</p>
 				</div>
