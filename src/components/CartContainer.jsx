@@ -1,7 +1,8 @@
 import React from 'react'
+import CartItem from './CartItem'
 
-const cartContainer = () => {
+const CartContainer = () => {
 	return <div>cartContainer</div>
 }
 
-export default cartContainer
+export default CartContainer
