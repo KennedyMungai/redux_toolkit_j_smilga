@@ -18,7 +18,7 @@ const CartItem = ({ id, img, title, price, amount }) => {
 				<h4 className='item-price'>${price}</h4>
 				<button
 					className='remove-btn'
-					onClick={() => dispatch(removeItem(id))}
+					onClick={() => dispatch(removeItem({ id }))}
 				>
 					Remove
 				</button>
@@ -26,14 +26,14 @@ const CartItem = ({ id, img, title, price, amount }) => {
 			<div>
 				<button
 					className='amount-btn'
-					onClick={() => dispatch(increaseItem(id))}
+					onClick={() => dispatch(increaseItem({ id }))}
 				>
 					<BsChevronUp />
 				</button>
 				<p className='amount'>{amount}</p>
 				<button
 					className='amount-btn'
-					onClick={() => dispatch(decreaseItem(id))}
+					onClick={() => dispatch(decreaseItem({ id }))}
 				>
 					<BsChevronDown />
 				</button>
