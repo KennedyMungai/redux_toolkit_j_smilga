@@ -1,6 +1,9 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
 
 const Modal = () => {
+	const dispatch = useDispatch()
+
 	return (
 		<aside className='modal-container'>
 			<div className='modal'>
