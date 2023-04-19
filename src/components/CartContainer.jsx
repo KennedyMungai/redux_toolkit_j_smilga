@@ -16,9 +16,7 @@ const CartContainer = () => {
 		)
 	}
 
-	return (
-		
-	)
+	return <p>Cart Container</p>
 }
 
 export default CartContainer
