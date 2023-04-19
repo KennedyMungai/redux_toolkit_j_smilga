@@ -34,7 +34,8 @@ const cartSlice = createSlice({
 			)
 
 			state.amount -= 1
-		}
+		},
+		calculateTotals: (state) => {}
 	}
 })
 
