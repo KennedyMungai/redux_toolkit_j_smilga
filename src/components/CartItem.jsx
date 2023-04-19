@@ -1,5 +1,7 @@
 import React from 'react'
 import { BsChevronUp, BsChevronDown } from 'react-icons/bs'
+import { removeItem } from '../features/cart/cartSlice'
+import { useDispatch } from 'react-redux'
 
 const CartItem = ({ id, img, title, price, amount }) => {
 	return (
