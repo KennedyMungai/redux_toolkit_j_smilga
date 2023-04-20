@@ -57,7 +57,18 @@ const cartSlice = createSlice({
 			state.total = total
 		}
 	},
-	extraReducers: {}
+	extraReducers: {
+		[getCartItems.pending]: (state) => {
+			state.isLoading = true
+		},
+		[getCartItems.fulfilled]: (state, { payload }) => {
+			state.isLoading = false
+			state.cartItems = payload
+		},
+		[getCartItems.rejected]: (state) => {
+			state.isLoading = false
+		}
+	}
 })
 
 export const {
