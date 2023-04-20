@@ -20,7 +20,9 @@ export const getCartItems = createAsyncThunk(
 		try {
 			const resp = await axios(url)
 			return { data }
-		} catch (error) {}
+		} catch (error) {
+			return thunkAPI.rejectWithValue('Something went wrong')
+		}
 	}
 )
 
