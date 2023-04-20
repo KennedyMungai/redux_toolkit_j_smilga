@@ -10,10 +10,11 @@ const initialState = {
 	isLoading: true
 }
 
-export const getCartItems = createAsyncThunk(
-	'cart/getCartItems',
-	async () => {}
-)
+export const getCartItems = createAsyncThunk('cart/getCartItems', async () => {
+	try {
+		const resp = await axios(url)
+	} catch (error) {}
+})
 
 const cartSlice = createSlice({
 	name: 'cart',
