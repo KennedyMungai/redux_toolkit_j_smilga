@@ -1,6 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
 import cartItems from '../../cartItems'
 
+const url = 'https://course-api.com/react-useReducer-cart-project'
+
 const initialState = {
 	cartItems,
 	amount: 4,
