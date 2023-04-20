@@ -13,9 +13,9 @@ const initialState = {
 export const getCartItems = createAsyncThunk(
 	'cart/getCartItems',
 	async (name, thunkAPI) => {
-		console.log(name)
-		console.log(thunkAPI)
-		console.log(thunkAPI.getState())
+		// console.log(name)
+		// console.log(thunkAPI)
+		// console.log(thunkAPI.getState())
 
 		try {
 			const resp = await axios(url)
