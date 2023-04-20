@@ -15,7 +15,7 @@ function App() {
 	}, [cartItems])
 
 	useEffect(() => {
-		getCartItems()
+		getCartItems('Jean Jackets')
 	}, [])
 
 	if (isLoading) {
