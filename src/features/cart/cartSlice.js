@@ -1,5 +1,4 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
-import cartItems from '../../cartItems'
 
 const url = 'https://course-api.com/react-useReducer-cart-project'
 
